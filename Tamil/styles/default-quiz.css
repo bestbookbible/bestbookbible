@@ -1,0 +1,27 @@
+body {
+    background-color: gold;
+}  
+div.question{
+    color:black;
+    font-size: 75px;
+}
+div.answer-choice{
+    margin-top: 10px;
+    color:blue;
+    font-size: 50px;
+}
+div.next-question{
+    font-size: 50px;
+    text-align: right;
+}
+div.response{
+    width:500px;
+    height: 300px;
+    background-color:pink;
+    font-size: 200px;
+    text-align: center;
+}
+
+div.hide-item{
+    display: none;
+}

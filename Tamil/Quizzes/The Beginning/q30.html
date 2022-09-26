@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>The Beginning Quiz</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">30. What did Abel bring for the sacrifice?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">First-born of the flock</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Fruits of the soil</div>
+            <br>
+            <div class="hide-item response" id="correct">✅</div>
+            <div class="hide-item response" id="wrong">❌</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "1";
+                
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("../../../common/conclusionpagequiz.html");
+                }
+            </script>
+    </body>
+</html

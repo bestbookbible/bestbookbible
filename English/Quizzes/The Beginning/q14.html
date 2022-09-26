@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>The Beginning Quiz</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+        <div class="question">14. What is the name of the first river God created in the garden of Eden?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Heddickel / Tigris</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Pishon</div>
+            <br>
+            <div class="hide-item response" id="correct">✅</div>
+            <div class="hide-item response" id="wrong">❌</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "2";
+                
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q15.html");
+                }
+            </script>
+    </body>
+</html>

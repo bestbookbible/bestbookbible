@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>The Beginning Quiz</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+        <div class="question">7. Who is the first man God created?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Abraham</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Adam</div>
+            <br>
+            <div class="hide-item response" id="correct">✅</div>
+            <div class="hide-item response" id="wrong">❌</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "2";
+                
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q8.html");
+                }
+            </script>
+    </body>
+</html>
