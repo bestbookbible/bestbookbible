@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Beginning Quiz</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">8. Who was the brother of Jabal?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Kenan</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Jubal</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "2";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q2.html");
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Beginning Quiz</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">11.What did Lamech say to his wives?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">"I have slain a man for killing my father and a young man for throwing stones at me".</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">"I have slain a man for wounding me, and a young man for bruising and striking me".</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "2";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q2.html");
+                }
+            </script>
+    </body>
+</html>
