@@ -7,17 +7,17 @@
         <link rel="stylesheet" href="../../styles/default-quiz.css">
     </head>
     <body>
-            <div class="question">14. How many years did Mahalalel live?</div>
+            <div class="question">22. What is the name of Methuselah's son?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">895 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Noah</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">900 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Lamech</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "2";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
@@ -25,7 +25,7 @@
                 }
 
                 function proceedToNextPage(){
-                    moveToPage("q15.html");
+                    moveToPage("q23.html");
                 }
             </script>
     </body>
