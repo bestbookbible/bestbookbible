@@ -9,15 +9,19 @@
     <body>
         <div class="question">3. What did God create on the second day?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Sun , Moon and Stars</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Vapors and Oceans</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Vapors and Oceans</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Sun and Moon</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Created Man and Women</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Water Vapour and Oceans</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "2";
+                let correctAnswer = "1";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);

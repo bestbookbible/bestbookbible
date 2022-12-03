@@ -9,15 +9,19 @@
     <body>
             <div class="question">4. What did God create on the third day?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Earth , Sea and Plants</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Plants and Trees</div>
             <br>
             <div class="answer-choice" onclick="javascript:validateAnswer(2)">Air and Sea Creatures</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Oceans and Seas</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Earth , Sea and Plants</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "4";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
