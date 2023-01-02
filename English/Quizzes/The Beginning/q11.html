@@ -9,15 +9,19 @@
     <body>
             <div class="question">11. Satan came to Eve in the form of a _______.</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Snake</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Snake</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Dinosaur</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Dinosaur</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Crocodile</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Lion</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "2";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);

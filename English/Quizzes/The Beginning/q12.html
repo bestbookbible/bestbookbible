@@ -9,15 +9,19 @@
     <body>
             <div class="question">12. What is the curse God gave to Adam?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Work hard for food</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Work hard for water</div>
             <br>
             <div class="answer-choice" onclick="javascript:validateAnswer(2)">Bear children in pain</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Work hard for food</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Prepare food for the family</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "3";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
