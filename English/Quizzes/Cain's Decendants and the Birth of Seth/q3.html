@@ -9,15 +9,19 @@
     <body>
             <div class="question">3. Methusael was the father of _____?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Lamech</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Lamesh</div>
             <br>
             <div class="answer-choice" onclick="javascript:validateAnswer(2)">Methujael</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Methujeal</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Lamech</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "4";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
