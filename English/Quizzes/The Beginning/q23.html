@@ -9,15 +9,19 @@
     <body>
         <div class="question">23.Why was Cain angry?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">God cured him</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">God did not accept his sacrifice</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">God did not accept his sacrifice</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">God cured him</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">God God did not bless him</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">God cursed him</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "2";
+                let correctAnswer = "1";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
