@@ -9,15 +9,19 @@
     <body>
             <div class="question">28. What was the age of Noah when his sons were born to him?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">255 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">500 Years</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">500 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">250 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">266 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">510 Years</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "2";
+                let correctAnswer = "1";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);

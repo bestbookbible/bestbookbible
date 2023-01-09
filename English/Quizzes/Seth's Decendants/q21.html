@@ -9,15 +9,19 @@
     <body>
             <div class="question">21. What was the age of Methuselah when a son was born to him?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">187 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">185 Years</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">185 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">187 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">180 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">182 Years</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "2";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);

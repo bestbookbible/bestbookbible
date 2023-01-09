@@ -9,15 +9,19 @@
     <body>
             <div class="question">11. How many years did Kenan live?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">910 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">902 Years</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">905 Years</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">912 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">910 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">905 Years</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "3";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);

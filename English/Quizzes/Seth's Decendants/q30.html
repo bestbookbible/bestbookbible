@@ -9,15 +9,19 @@
     <body>
             <div class="question">30. What are the names of Noah's sons?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Shem, Ham and Japheth</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Shen,Ham,Han and Japheth</div>
             <br>
             <div class="answer-choice" onclick="javascript:validateAnswer(2)">Shem, Han and Japheth</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Shem and Japheth</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Shem, Ham and Japheth</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "4";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);

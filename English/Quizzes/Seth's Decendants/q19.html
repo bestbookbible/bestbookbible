@@ -9,15 +9,19 @@
     <body>
             <div class="question">19. What is the Name of Enoch's son?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Methuselah</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Methujael</div>
             <br>
             <div class="answer-choice" onclick="javascript:validateAnswer(2)">Methusalem</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Methuselah</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Methulael</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "1";
+                let correctAnswer = "3";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
