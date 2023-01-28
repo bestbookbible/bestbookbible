@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">2. Who is the person who found favour in the eyes of God?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Naoh</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Nahor</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Noah</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Nathaniel</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "3";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q3.html");
+                }
+            </script>
+    </body>
+</html>

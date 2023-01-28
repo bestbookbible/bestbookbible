@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">12. What should the gap between the top of the window and the top of the ark should atleast be?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">1 Cubit or 18 Inches</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">3 Cubits</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">36 Inches or 2 Cubits</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">1 Metre or 39 Inches</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "1";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q13.html");
+                }
+            </script>
+    </body>
+</html>

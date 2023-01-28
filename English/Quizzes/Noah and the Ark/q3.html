@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">3. The Lord saw that the _______ of man was great on Earth.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Sin</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Wickdness</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Evil</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Pride</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "2";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q4.html");
+                }
+            </script>
+    </body>
+</html>

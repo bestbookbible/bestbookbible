@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">1. My Spirit shall not forever dwell and strive with man, for he is also flesh; but his days shall yet be _______ Years.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">120 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">100 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">150 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">130 Years</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "1";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q2.html");
+                }
+            </script>
+    </body>
+</html>

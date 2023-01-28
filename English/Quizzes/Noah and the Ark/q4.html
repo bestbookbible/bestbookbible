@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">4. Noah was a _____ and _____ man.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Kind and Good</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Sinful and Proud</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Helpful and Good</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Just and Righteous</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "4";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q5.html");
+                }
+            </script>
+    </body>
+</html>

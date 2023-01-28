@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">16. Also take every sort of ___ that is ___, and you shall collect and store it up, and it shall serve as ___ for you and for them.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Seeds, used and source of food</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Tools, used and tools for mending the ark</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Food, eaten and food</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Plants, grown and source of food</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "3";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q17.html");
+                }
+            </script>
+    </body>
+</html>

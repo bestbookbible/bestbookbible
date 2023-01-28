@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">8. The inside and outside of the ark should be covered with _______.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Wood</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Pitch or bitumen</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Coal</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Iron</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "2";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q9.html");
+                }
+            </script>
+    </body>
+</html>
