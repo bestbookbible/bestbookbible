@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">20. How many days and nights did it rain?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">100 days and 100 nights</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">50 days and 50 nights</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">25 days and 25 nights</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">40 days and 40 nights</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "4";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q21.html");
+                }
+            </script>
+    </body>
+</html>

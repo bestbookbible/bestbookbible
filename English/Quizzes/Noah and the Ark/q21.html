@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">21. What was the age of Noah when the flood waters came on the earth?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">100 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">250 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">400 Years</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">600 Years</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "4";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q22.html");
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">18. Of Every beasts that are not clean you shall take _____ pairs.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">One</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Three</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Five</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Seven</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "1";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q19.html");
+                }
+            </script>
+    </body>
+</html>
