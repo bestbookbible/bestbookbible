@@ -1,21 +1,26 @@
 body {
+    background-color: #f4ecd6;
     background-image:url('..\\images\\praise god bg image.jpg');
     width: 100%;
   }
 
 a.menu-link{
-    font-size: 75px;
-    color:orange;
+    font-size: 20px;
+    color:#847996;
 }
 h1.page-title{
     text-align:center;
-    font-size:100px;
-    color:yellow;
-    text-decoration: underline;
+    font-size:30px;
+    color:#310a31;
     font-weight: bold;
 }
 
 copyright{
     color:red;
     font-size: 50px;
+}
+
+a.quiz-title{
+    font: size 100px;
+    color:#847996;
 }

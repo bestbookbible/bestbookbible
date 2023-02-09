@@ -1,14 +1,14 @@
 body {
     background-color: gold;
-}  
+}
 div.question{
     color:black;
-    font-size: 75px;
+    font-size: 30px;
 }
 div.answer-choice{
     margin-top: 10px;
     color:blue;
-    font-size: 50px;
+    font-size: 20px;
 }
 div.next-question{
     font-size: 50px;
