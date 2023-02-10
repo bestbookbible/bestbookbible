@@ -15,6 +15,13 @@ h1.page-title{
     font-weight: bold;
 }
 
+h1.page-subtitle{
+    font-size:25px;
+    color:#310a31;
+    font-weight: bold;
+}
+
+
 copyright{
     color:red;
     font-size: 50px;
@@ -23,4 +30,14 @@ copyright{
 a.quiz-title{
     font: size 100px;
     color:#847996;
+}
+
+.biblequote{
+    font-size: 25px;
+    color: darkorange;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    display: block;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
