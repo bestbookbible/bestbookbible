@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">26.On the ___ day of the ___ month the ark came to rest on the mountains of ___.</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Fifteenth, fifth and Himalayas</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Sixteenth, sixth and Arart</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Seventeenth, seven and Himalayas</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Seventeenth, seven and Ararat</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "4";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q27.html");
+                }
+            </script>
+    </body>
+</html>

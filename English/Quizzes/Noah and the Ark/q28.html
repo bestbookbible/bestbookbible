@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">28. What waas the first bird Noah sent to check whether the land had dried up and did it return to him?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Parrot and returned</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Parrot and did not return</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Raven and did not return</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Raven and returned</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "3";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q29.html");
+                }
+            </script>
+    </body>
+</html>

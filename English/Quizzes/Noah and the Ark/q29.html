@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noah and the Ark</title>
+        <link rel="stylesheet" href="../../styles/default-quiz.css">
+    </head>
+    <body>
+            <div class="question">29. What is the second bird Noah sent and did it return the first time?</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Dove and returned</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Dove and did not return</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Crow and did not return</div>
+            <br>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Crow and returned</div>
+            <br>
+            <div class="hide-item response" id="correct">✓</div>
+            <div class="hide-item response" id="wrong">x</div>
+            <script src="../../scripts/default-quiz.js"></script>
+            <script type="text/javascript">
+                let correctAnswer = "1";
+
+                function validateAnswer(answerNumber){
+                    assessQuestion(answerNumber, correctAnswer);
+                    setTimeout(proceedToNextPage, 500);
+                }
+
+                function proceedToNextPage(){
+                    moveToPage("q30.html");
+                }
+            </script>
+    </body>
+</html>
