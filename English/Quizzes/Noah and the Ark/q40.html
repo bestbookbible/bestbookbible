@@ -7,21 +7,21 @@
         <link rel="stylesheet" href="../../styles/default-quiz.css">
     </head>
     <body>
-            <div class="question">33.Noah built an ___ to the Lord and took of every clean fowl or bird and offered ___ offering on it.</div>
+            <div class="question">40. How many years did noah live in total?</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(1)">Tent and human</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(1)">700 years</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(2)">Altar and burnt</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(2)">850 years</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(3)">Altr and burnt</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(3)">900 years</div>
             <br>
-            <div class="answer-choice" onclick="javascript:validateAnswer(4)">Tent and animal</div>
+            <div class="answer-choice" onclick="javascript:validateAnswer(4)">950 years</div>
             <br>
             <div class="hide-item response" id="correct">✓</div>
             <div class="hide-item response" id="wrong">x</div>
             <script src="../../scripts/default-quiz.js"></script>
             <script type="text/javascript">
-                let correctAnswer = "2";
+                let correctAnswer = "4";
 
                 function validateAnswer(answerNumber){
                     assessQuestion(answerNumber, correctAnswer);
@@ -29,7 +29,7 @@
                 }
 
                 function proceedToNextPage(){
-                    moveToPage("q34.html");
+                    moveToPage("../../common/conclusionpagequiz.html");
                 }
             </script>
     </body>
